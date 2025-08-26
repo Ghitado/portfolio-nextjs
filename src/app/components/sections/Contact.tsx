@@ -51,8 +51,8 @@ export default function Contact() {
 
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
-    } catch (err) {
-      setStatus("error");
+    } catch (_) {
+      console.error("Deu ruim!");
     }
   };
 
